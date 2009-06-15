@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.code-house.servicemixide.eclipse</groupId>
+        <artifactId>servicemix-file</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.code-house.servicemixide.eclipse.servicemix-file</groupId>
+    <artifactId>catalog</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>ServiceMix IDE :: Eclipse :: SMX File :: Catalog</name>
+    <description>Support for ServiceMix file endpoints.</description>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>plugin*.*</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>schema</directory>
+                <targetPath>schema</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifestFile>META-INF/MANIFEST.MF</manifestFile>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- MANIFEST.MF Generation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <manifestLocation>META-INF</manifestLocation>
+                    <instructions>
+                        <Bundle-SymbolicName>${pom.groupId}.${pom.artifactId};singleton:=true</Bundle-SymbolicName>
+                        <Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>
+                        <Require-Bundle>org.eclipse.wst.xml.core</Require-Bundle>
+                    </instructions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

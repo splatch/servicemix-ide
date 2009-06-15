@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.code-house.servicemixide</groupId>
+        <artifactId>maven</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.code-house.servicemixide.maven</groupId>
+    <artifactId>maven-xmlcatalog-generator</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>ServiceMix IDE :: Maven :: XML Catalog Generator</name>
+    <description>ServiceMix IDE - maven xml catalog generator.</description>
+
+    <packaging>maven-plugin</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.servicemixide.utils</groupId>
+            <artifactId>xmlcatalog</artifactId>
+            <version>${pom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+        <dependency>
+            <artifactId>regexp</artifactId>
+            <groupId>regexp</groupId>
+            <version>1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugin-testing</groupId>
+            <artifactId>maven-plugin-testing-harness</artifactId>
+            <version>1.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

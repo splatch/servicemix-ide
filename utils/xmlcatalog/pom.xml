@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.code-house.servicemixide</groupId>
+        <artifactId>utils</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.code-house.servicemixide.utils</groupId>
+    <artifactId>xmlcatalog</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>ServiceMix IDE :: Utils :: XML Catalog</name>
+    <description>ServiceMix IDE - XML catalog utility.</description>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.6.3</version>
+                <executions>
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <extension>true</extension>-->
+<!--                            <schemaLanguage>DTD</schemaLanguage>-->
+<!--                            <schemaIncludes>-->
+<!--                                <schemaInclude>*.dtd</schemaInclude>-->
+<!--                            </schemaIncludes>-->
+<!--                            <args>-->
+<!--                                <arg>-p</arg>-->
+<!--                                <arg>org.code_house.servicemixide.utils.xmlcatalog.jaxb</arg>-->
+<!--                            </args>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+                    <execution>
+                        <id>sec</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <extension>true</extension>
+                            <schemaLanguage>XMLSchema</schemaLanguage>
+                            <schemaIncludes>
+                                <schemaInclude>*.xsd</schemaInclude>
+                            </schemaIncludes>
+<!--                            <args>-->
+<!--                                <arg>-p</arg>-->
+<!--                                <arg>org.code_house.servicemixide.utils.xmlcatalog.jaxb</arg>-->
+<!--                            </args>-->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+<!--            <plugin>-->
+<!--                <artifactId>maven-antrun-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>generate-sources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>run</goal>-->
+<!--                        </goals>-->
+                        <!-- Replace too long property name :) -->
+<!--                        <configuration>-->
+<!--                            <tasks>-->
+<!--                                <replaceregexp byline="true">-->
+<!--                                    <regexp pattern="publicOr(\w+)" />-->
+<!--                                    <substitution expression="elements"/>-->
+<!--                                    <fileset dir="target/generated-sources/xjc">-->
+<!--                                        <include name="**/Catalog.java" />-->
+<!--                                        <include name="**/Group.java" />-->
+<!--                                    </fileset>-->
+<!--                                </replaceregexp>-->
+<!--                                <replaceregexp byline="true">-->
+<!--                                    <regexp pattern="PublicOr(\w+)" />-->
+<!--                                    <substitution expression="Elements"/>-->
+<!--                                    <fileset dir="target/generated-sources/xjc">-->
+<!--                                        <include name="**/Catalog.java" />-->
+<!--                                        <include name="**/Group.java" />-->
+<!--                                    </fileset>-->
+<!--                                </replaceregexp>-->
+<!--                            </tasks>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <dependencies>-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.apache.ant</groupId>-->
+<!--                        <artifactId>ant-nodeps</artifactId>-->
+<!--                        <version>1.7.1</version>-->
+<!--                    </dependency> -->
+<!--                </dependencies>-->
+<!--            </plugin>-->
+        </plugins>
+    </build>
+
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>com.sun.xml.bind</groupId>-->
+<!--            <artifactId>jaxb-xjc</artifactId>-->
+<!--            <version>2.1.2</version>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
+
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog
+   PUBLIC "-//OASIS/DTD Entity Resolution XML Catalog V1.0//EN"
+   "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <rewriteURI rewritePrefix="http://servicemix.apache.org/schema/"
+        uriStartString="file://schema/" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-2008.01.xsd"
+        uri="servicemix-file-2008.01.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-2009.01.xsd"
+        uri="servicemix-file-2009.01.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-3.1.2.xsd"
+        uri="servicemix-file-3.1.2.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-3.2.xsd"
+        uri="servicemix-file-3.2.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-3.2.1.xsd"
+        uri="servicemix-file-3.2.1.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-3.2.2.xsd"
+        uri="servicemix-file-3.2.2.xsd" />
+
+    <uri name="http://servicemix.apache.org/schema/servicemix-file-3.2.3.xsd"
+        uri="servicemix-file-3.2.3.xsd" />
+
+</catalog>
