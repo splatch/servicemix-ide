@@ -17,4 +17,16 @@
     <name>ServiceMix IDE :: Utils :: XML Catalog</name>
     <description>ServiceMix IDE - XML catalog utility.</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.1.10</version>
+        </dependency>
+    </dependencies>
 </project>
