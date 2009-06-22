@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.code-house.servicemixide.eclipse</groupId>
         <artifactId>servicemix-file</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide.eclipse.servicemix-file</groupId>
     <artifactId>feature</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Eclipse :: SMX File :: Feature</name>
     <description>Support for ServiceMix file endpoints - eclipse feature.</description>
@@ -30,7 +30,6 @@
                     <projectnatures>
                         <projectnature>org.eclipse.pde.FeatureNature</projectnature>
                     </projectnatures>
-                    <classpathContainers />
                 </configuration>
             </plugin>
         </plugins>

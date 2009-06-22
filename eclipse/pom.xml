@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.code-house</groupId>
         <artifactId>servicemixide</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide</groupId>
     <artifactId>eclipse</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Eclipse</name>
     <description>ServiceMix IDE - all eclipse plugins.</description>
@@ -20,6 +20,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>updatesite</module>
         <module>activemq-core</module>
         <module>servicemix-file</module>
 <!--        <module>servicemix-jms</module>-->

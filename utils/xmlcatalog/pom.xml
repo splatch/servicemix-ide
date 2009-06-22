@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.code-house.servicemixide</groupId>
         <artifactId>utils</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide.utils</groupId>
     <artifactId>xmlcatalog</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Utils :: XML Catalog</name>
     <description>ServiceMix IDE - XML catalog utility.</description>

@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.code-house</groupId>
+        <artifactId>servicemixide</artifactId>
+        <version>1.0.0.SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.code-house.servicemixide</groupId>
+    <artifactId>build</artifactId>
+    <version>1.0.0.SNAPSHOT</version>
+
+    <name>ServiceMix IDE :: Build scripts</name>
+    <description>ServiceMix tooling automated build scripts.</description>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <activemq-core.feature.version>1.0.0.SNAPSHOT</activemq-core.feature.version>
+        <servicemix-file.feature.version>1.0.0.SNAPSHOT</servicemix-file.feature.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2-beta-4</version>
+                <executions>
+                    <execution>
+                        <id>step-one</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/updatesite.xml</descriptor>
+                            </descriptors>
+                            <appendAssemblyId>false</appendAssemblyId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.code-house.servicemixide.eclipse.activemq-core</groupId>
+            <artifactId>feature</artifactId>
+            <version>${activemq-core.feature.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.servicemixide.eclipse.servicemix-file</groupId>
+            <artifactId>feature</artifactId>
+            <version>${servicemix-file.feature.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.code-house.servicemixide.eclipse</groupId>
+            <artifactId>updatesite</artifactId>
+            <version>1.0.0.SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>p2</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.1</version>
+        
+                        <executions>
+                            <execution>
+                                <id>p2-publisher</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>java</executable>
+                                    <arguments>
+                                        <argument>-jar</argument>
+                                        <argument>${eclipse.home}/plugins/org.eclipse.equinox.launcher_${launcher.version}.jar</argument>
+                                        <argument>-application</argument>
+                                        <argument>org.eclipse.equinox.p2.publisher.UpdateSitePublisher</argument>
+                                        <argument>-source ${source}</argument>
+                                        <argument>-compress</argument>
+                                        <argument>-publishArtifacts ${source}</argument>
+                                        <argument>-metadataRepository ${source}</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+    
+        </profile>
+    </profiles>
+
+</project>

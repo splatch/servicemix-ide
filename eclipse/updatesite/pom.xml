@@ -4,23 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.code-house</groupId>
-        <artifactId>servicemixide</artifactId>
+        <groupId>org.code-house.servicemixide</groupId>
+        <artifactId>eclipse</artifactId>
         <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
-    <groupId>org.code-house.servicemixide</groupId>
-    <artifactId>maven</artifactId>
+    <groupId>org.code-house.servicemixide.eclipse</groupId>
+    <artifactId>updatesite</artifactId>
     <version>1.0.0.SNAPSHOT</version>
 
-    <name>ServiceMix IDE :: Maven</name>
-    <description>ServiceMix IDE - maven plugins.</description>
+    <name>ServiceMix IDE :: Eclipse :: Update site</name>
+    <description>Standard eclipse update site.</description>
 
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>maven-xmlcatalog-generator</module>
-    </modules>
+    <packaging>jar</packaging>
 
 </project>

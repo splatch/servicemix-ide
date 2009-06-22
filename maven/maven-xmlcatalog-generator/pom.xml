@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.code-house.servicemixide</groupId>
         <artifactId>maven</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide.maven</groupId>
     <artifactId>maven-xmlcatalog-generator</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Maven :: XML Catalog Generator</name>
     <description>ServiceMix IDE - maven xml catalog generator.</description>

@@ -6,13 +6,13 @@
     <parent>
         <groupId>org.code-house.servicemixide.eclipse</groupId>
         <artifactId>activemq-core</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide.eclipse.activemq-core</groupId>
     <artifactId>catalog</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Eclipse :: AMQ Core :: Catalog</name>
     <description>Support for ActiveMQ namespaces.</description>
@@ -78,16 +78,46 @@
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
-                        <phase>package</phase>
+                        <phase>generate-sources</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
                         </goals>
-                        
+                        <configuration>
+                            <excludedGroupIds>
+                                org.eclipse.*,
+                                com.springsource.*,
+                                org.springframework.*
+                            </excludedGroupIds>
+                            <includedScopes>
+                                compile,
+                                runtime
+                            </includedScopes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
 
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>osgi</artifactId>
+            <version>3.5.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ui</groupId>
+            <artifactId>workbench</artifactId>
+            <version>[3.5.0,4.0.0)</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.servicemixide.utils</groupId>
+            <artifactId>xmlcatalog</artifactId>
+            <version>1.0.0.SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

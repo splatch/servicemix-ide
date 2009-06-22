@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="ServiceMix IDE update Site" url="htp://software.code-house.org/servicemix-ide/">
+      Better support for ServiceMix inside your Eclipse! :-)
+   </description>
+   <feature url="features/org.codehouse.servicemixide.eclipse.activemq-core.feature_1.0.0.qualifier.jar" id="org.codehouse.servicemixide.eclipse.activemq-core.feature" version="1.0.0.qualifier">
+      <category name="activemq-core"/>
+   </feature>
+   <category-def name="activemq-core" label="ActiveMQ support">
+      <description>
+         Support for ActiveMQ
+      </description>
+   </category-def>
+</site>

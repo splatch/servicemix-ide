@@ -7,18 +7,30 @@
     <parent>
         <groupId>org.code-house.servicemixide.eclipse</groupId>
         <artifactId>activemq-core</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0.SNAPSHOT</version>
     </parent>
 
     <!-- Project identification -->
     <groupId>org.code-house.servicemixide.eclipse.activemq-core</groupId>
     <artifactId>feature</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE :: Eclipse :: AMQ Core :: Feature</name>
     <description>Support for ActiveMQ namespaces - eclipse feature.</description>
 
+    <properties>
+        <feature.version>${pom.version}</feature.version>
+        <catalog.version>${pom.version}</catalog.version>
+        <ui.version>${pom.version}</ui.version>
+    </properties>
+
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -30,10 +42,22 @@
                     <projectnatures>
                         <projectnature>org.eclipse.pde.FeatureNature</projectnature>
                     </projectnatures>
-                    <classpathContainers />
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.code-house.servicemixide.eclipse.activemq-core</groupId>
+            <artifactId>ui</artifactId>
+            <version>${ui.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.servicemixide.eclipse.activemq-core</groupId>
+            <artifactId>catalog</artifactId>
+            <version>${catalog.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
