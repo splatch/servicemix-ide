@@ -28,16 +28,18 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.2-beta-4</version>
+                <version>2.2</version>
                 <executions>
                     <execution>
                         <id>step-one</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>attached</goal>
+                            <goal>single</goal>
                         </goals>
                         <configuration>
+                            <finalName>updatesite</finalName>
                             <descriptors>
                                 <descriptor>src/main/assembly/updatesite.xml</descriptor>
                             </descriptors>
@@ -105,6 +107,24 @@
                 </plugins>
             </build>
     
+        </profile>
+
+        <profile>
+            <id>splatch</id>
+            <properties>
+                <eclipse.home>D:/tools/eclipse-3.5 pde</eclipse.home>
+                <launcher.version>1.1.0.v20100507</launcher.version>
+                <source>${project.build.directory}/updatesite/updatesite</source>
+            </properties>
+        </profile>
+        <profile>
+            <id>server</id>
+
+            <properties>
+                <eclipse.home>/home/splatch/eclipse/</eclipse.home>
+                <launcher.version>1.0.200.v20090520</launcher.version>
+                <source>${project.build.directory}/updatesite/updatesite</source>
+            </properties>
         </profile>
     </profiles>
 

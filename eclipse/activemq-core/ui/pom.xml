@@ -21,6 +21,7 @@
         Support for ActiveMQ namespaces - user interface releated code.
     </description>
 
+    <!--
     <build>
         <resources>
             <resource>
@@ -41,6 +42,7 @@
         <sourceDirectory>src/main/java</sourceDirectory>
         <testSourceDirectory>src/test/java</testSourceDirectory>
     </build>
+    -->
 
     <dependencies>
         <dependency>
