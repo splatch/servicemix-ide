@@ -3,12 +3,14 @@
     <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
     <modelVersion>4.0.0</modelVersion>
 
+    <!--
     <parent>
         <groupId>org.code-house</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.1.SNAPSHOT</version>
         <relativePath>parent/pom.xml</relativePath>
     </parent>
+    -->
 
     <!-- Project identification -->
     <groupId>org.code-house</groupId>
@@ -42,22 +44,46 @@
 
     <build>
         <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
-            
+
         <pluginManagement>
             <plugins>
-                <!-- Maven to eclipse -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-eclipse-plugin</artifactId>
-                    <version>2.7</version>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3</version>
                     <configuration>
-                        <buildOutputDirectory>bin</buildOutputDirectory>
-                        <projectNameTemplate>[groupId]_[artifactId]</projectNameTemplate>
+                        <source>1.5</source>
+                        <target>1.5</target>
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <!-- Maven to eclipse -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <buildOutputDirectory>bin</buildOutputDirectory>
+                    <projectNameTemplate>[groupId]_[artifactId]</projectNameTemplate>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>code-house.internal.eclipse</id>
+            <name>Eclipse artifacts</name>
+            <url>http://repository.code-house.org/content/repositories/code-house.internal.eclipse/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
