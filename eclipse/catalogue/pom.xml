@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+	    <groupId>org.code-house</groupId>
+	    <artifactId>servicemixide</artifactId>
+	    <version>1.0.0.SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.code-house.servicemixide</groupId>
+    <artifactId>catalogue</artifactId>
+    <version>1.0.0.SNAPSHOT</version>
+
+    <name>ServiceMix IDE :: Eclipse Catalogue provision</name>
+    <description>Support for multiple namespaces.</description>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>plugin*.*</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>schema</directory>
+                <targetPath>schema</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifestFile>META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- MANIFEST.MF Generation -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <manifestLocation>META-INF</manifestLocation>
+                    <instructions>
+                        <Bundle-SymbolicName>${pom.groupId}.${pom.artifactId};singleton:=true</Bundle-SymbolicName>
+                        <Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>
+                        <Require-Bundle>org.eclipse.wst.xml.core</Require-Bundle>
+                        <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
+                        <Embed-Directory>target/dependency</Embed-Directory>
+                        <Embed-StripGroup>true</Embed-StripGroup>
+                        <Bundle-DocURL>${project.issueManagement.url}</Bundle-DocURL>
+                        <Bundle-Classpath>.</Bundle-Classpath>
+                    </instructions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <excludedGroupIds>
+                                org.eclipse.*,
+                                com.springsource.*,
+                                org.springframework.*
+                            </excludedGroupIds>
+                            <includedScopes>
+                                compile,
+                                runtime
+                            </includedScopes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>osgi</artifactId>
+            <version>3.5.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ui</groupId>
+            <artifactId>workbench</artifactId>
+            <version>[3.5.0,4.0.0)</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.code-house.servicemixide.utils</groupId>
+            <artifactId>xmlcatalog</artifactId>
+            <version>1.0.0.SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
