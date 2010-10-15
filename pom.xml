@@ -3,15 +3,6 @@
     <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
     <modelVersion>4.0.0</modelVersion>
 
-    <!--
-    <parent>
-        <groupId>org.code-house</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0.1.SNAPSHOT</version>
-        <relativePath>parent/pom.xml</relativePath>
-    </parent>
-    -->
-
     <!-- Project identification -->
     <groupId>org.code-house</groupId>
     <artifactId>servicemixide</artifactId>
@@ -36,14 +27,16 @@
     </scm>
 
     <modules>
-        <module>eclipse</module>
-        <module>maven</module>
-        <module>utils</module>
+        <module>eclipse/catalogue</module>
+        <!-- I'll keep you in my mind
         <module>build</module>
+        -->
     </modules>
 
     <build>
+        <!-- Currently build number are not necessary 
         <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
+        -->
 
         <pluginManagement>
             <plugins>
