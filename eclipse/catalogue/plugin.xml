@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
+
    <extension
          point="org.eclipse.wst.xml.core.catalogContributions">
       <catalogContribution>
-         <nextCatalog
-               catalog="schema/catalog.xml">
-         </nextCatalog>
+         <nextCatalog catalog="schema/activemq/activemq-catalogue.xml" />
+         <nextCatalog catalog="schema/camel/camel-catalogue.xml" />
       </catalogContribution>
    </extension>
 
