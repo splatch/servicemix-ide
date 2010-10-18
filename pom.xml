@@ -28,6 +28,7 @@
 
     <modules>
         <module>eclipse/catalogue</module>
+        <module>eclipse/archetype</module>
         <!-- I'll keep you in my mind
         <module>build</module>
         -->
