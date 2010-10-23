@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+        id="org.smxide.common.feature"
+        label="ServiceMix IDE Common Feature"
+        version="0.2.0.SNAPSHOT"
+        provider-name="Code-House">
+
+    <description>
+        Base for ServiceMix IDE.
+    </description>
+
+    <copyright>
+        Copyright (C) Code-House 2010.
+    </copyright>
+
+    <license url="http://www.eclipse.org/legal/epl-v10.html" />
+
+    <plugin
+        id="org.smxide.common.catalog"
+        download-size="0"
+        install-size="0"
+        version="0.2.0.SNAPSHOT"
+        unpack="false"/>
+
+    <plugin
+        id="org.smxide.common.archetype"
+        download-size="0"
+        install-size="0"
+        version="0.2.0.SNAPSHOT"
+        unpack="false"/>
+
+    <plugin
+        id="org.smxide.common.editor"
+        download-size="0"
+        install-size="0"
+        version="0.2.0.SNAPSHOT"
+        unpack="false"/>
+
+</feature>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.smxide.camel.archetype"
+         name="Camel Archetypes"
+         point="org.maven.ide.eclipse.archetypeCatalogs">
+      <remote
+            description="FUSE Mediation Router 1.4.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-1.4-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 1.5.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-1.5-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 1.6.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-1.6-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 2.0.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-2.0-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 2.1.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-2.1-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 2.2.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-2.2-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 2.3.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-2.3-fuse.xml">
+      </remote>
+      <remote
+            description="FUSE Mediation Router 2.4.x Catalog"
+            url="http://servicemix.pl/ide/camel/archetype-2.4-fuse.xml">
+      </remote>
+   </extension>
+
+</plugin>

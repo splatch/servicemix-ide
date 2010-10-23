@@ -4,14 +4,25 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Project identification -->
-    <groupId>org.code-house</groupId>
-    <artifactId>servicemixide</artifactId>
-    <version>1.0.0.SNAPSHOT</version>
+    <groupId>org.smxide</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.2.0.SNAPSHOT</version>
 
     <name>ServiceMix IDE</name>
-    <description>ServiceMix tooling based on Eclipse.</description>
 
     <packaging>pom</packaging>
+
+    <description>Eclipse tooling for various Apache Software Foundation middleware projects.</description>
+
+    <issueManagement>
+        <system>redmine</system>
+        <url>http://redmine.code-house.org</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Hudson</system>
+        <url>http://hudson.code-house.org</url>
+    </ciManagement>
 
     <licenses>
         <license>
@@ -21,26 +32,65 @@
         </license>
     </licenses>
 
+    <properties>
+        <tycho.version>0.10.0</tycho.version>
+
+        <!-- General upload properties -->
+        <uploadUrl>ftp://servicemix.pl</uploadUrl>
+        <uploadServerId>smxide</uploadServerId>
+    </properties>
+
     <scm>
-        <connection>scm:svn:http://svn.code-house.org/servicemix-ide/trunk</connection>
-        <url>http://svn.code-house.org/servicemix-ide/trunk</url>
+        <connection>scm:git:git://github.com/splatch/servicemix-ide.git</connection>
+        <url>http://github.com/splatch/servicemix-ide</url>
+        <developerConnection>scm:git:ssh://github.com/splatch/servicemix-ide.git</developerConnection>
     </scm>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>code-house.public.snapshot</id>
+            <name>Code-House Public Snapshot</name>
+            <url>http://repository.code-house.org/content/repositories/code-house.public.snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>code-house.public.release</id>
+            <name>Code-House Public Release</name>
+            <url>http://repository.code-house.org/content/repositories/code-house.public.release</url>
+        </repository>
+    </distributionManagement>
+
     <modules>
-        <module>eclipse/catalogue</module>
-        <module>eclipse/archetype</module>
-        <!-- I'll keep you in my mind
-        <module>build</module>
-        -->
+        <!-- Common project types with base code -->
+        <module>common/archetype</module>
+        <module>common/catalog</module>
+        <module>common/editor</module>
+        <module>common/feature</module>
+
+        <module>camel/catalog</module>
+        <module>camel/archetype</module>
+        <module>camel/feature</module>
+
+        <!-- ServiceMix -->
+        <!-- ActiveMQ -->
+        <!-- Karaf -->
+        <!-- CXF -->
+
+        <!-- Any other ? -->
     </modules>
 
-    <build>
-        <!-- Currently build number are not necessary 
-        <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
-        -->
+    <organization>
+        <name>Code-House</name>
+        <url>http://code-house.org</url>
+    </organization>
 
+    <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>wagon-maven-plugin</artifactId>
+                    <version>1.0-beta-3</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -50,8 +100,22 @@
                         <target>1.5</target>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.3</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.scm</groupId>
+                            <artifactId>maven-scm-provider-gitexe</artifactId>
+                            <version>1.3</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                
             </plugins>
         </pluginManagement>
+
         <plugins>
             <!-- Maven to eclipse -->
             <plugin>
@@ -63,20 +127,49 @@
                     <projectNameTemplate>[groupId]_[artifactId]</projectNameTemplate>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <version>${tycho.version}</version>
+                <configuration>
+                    <resolver>p2</resolver>
+                    <pomDependencies>consider</pomDependencies>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.tycho</groupId>
+                <artifactId>maven-osgi-packaging-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <configuration>
+                    <!-- This parameter turns off .qualifier verification -->
+                    <strictVersions>false</strictVersions>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
     <repositories>
+        <!-- Eclipse 3.6 -->
         <repository>
-            <id>code-house.internal.eclipse</id>
-            <name>Eclipse artifacts</name>
-            <url>http://repository.code-house.org/content/repositories/code-house.internal.eclipse/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>helios</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/helios</url>
+        </repository>
+        <!-- Spring IDE 2.x for e3.6 -->
+        <repository>
+            <id>springide</id>
+            <layout>p2</layout>
+            <url>http://dist.springsource.com/milestone/TOOLS/update/e3.6</url>
         </repository>
     </repositories>
 

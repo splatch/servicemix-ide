@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ActivationPolicy: lazy
+Built-By: Code-House
+Tool: Bnd-0.0.357
+Bundle-Name: %Bundle-Name
+Created-By: Apache Maven Bundle Plugin
+Require-Bundle: org.eclipse.wst.xml.core
+Build-Jdk: 1.6.0_21
+Bundle-Version: 0.2.0.SNAPSHOT
+Bnd-LastModified: 1287591353572
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Bundle-Description: %Bundle-Description
+Bundle-SymbolicName: org.smxide.common.catalog;singleton:=true
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ClassPath: .

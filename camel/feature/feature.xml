@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.smxide.camel.feature"
+    label="ServiceMix IDE Camel Feature"
+    version="0.2.0.SNAPSHOT"
+    provider-name="Code-House">
+
+    <description>
+        Support for Apache Camel.
+    </description>
+
+    <copyright>
+        Code-House (C) 2010.
+    </copyright>
+
+    <license url="http://www.eclipse.org/legal/epl-v10.html" />
+
+    <requires>
+        <import feature="org.smxide.common.feature" version="0.2.0.SNAPSHOT"/>
+    </requires>
+
+    <plugin
+        id="org.smxide.camel.archetype"
+        download-size="0"
+        install-size="0"
+        version="0.2.0.SNAPSHOT"
+        unpack="false"/>
+
+   <plugin
+        id="org.smxide.camel.catalog"
+        download-size="0"
+        install-size="0"
+        version="0.2.0.SNAPSHOT"
+        unpack="false"/>
+
+</feature>

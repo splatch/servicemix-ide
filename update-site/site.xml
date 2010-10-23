@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.smxide.camel.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.camel.feature" version="0.2.0.SNAPSHOT">
+      <category name="org.smxide.camel"/>
+   </feature>
+   <category-def name="org.smxide.camel" label="Apache Camel tooling">
+      <description>
+         Apache Camel tooling
+      </description>
+   </category-def>
+</site>

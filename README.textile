@@ -1,0 +1,33 @@
+h1. ServiceMix IDE
+
+This project provides support for multiple configuration files related witch
+ServiceMix deployment.
+
+h2. Feature mix
+
+This is only planned feature mix, currently only part of this list is implemented.
+
+Support for custom XML namespaces:
+* ServiceMix components
+* ActiveMQ
+* Camel
+* CXF
+
+Integrated content assistant for elements listed above
+* Camel
+* ServiceMix components
+* Karaf blueprint extensions 
+
+h2. Requirements
+
+This plugin requires:
+* Eclipse 3.5 
+* Spring IDE
+* M2Eclipse
+
+h2. Building
+
+We use Apache Maven *3.0* with "Tycho":http://tycho.sonatype.org.
+Make sure you use correct Maven version. 
+
+
