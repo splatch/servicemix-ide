@@ -71,6 +71,10 @@
         <module>camel/feature</module>
 
         <!-- ServiceMix -->
+        <module>servicemix/catalog</module>
+        <module>servicemix/archetype</module>
+        <module>servicemix/feature</module>
+
         <!-- ActiveMQ -->
         <!-- Karaf -->
         <!-- CXF -->

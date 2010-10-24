@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog
+   PUBLIC "-//OASIS/DTD Entity Resolution XML Catalog V1.0//EN"
+   "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+    <!-- This file contains only XSD files deployed to Maven central repository -->
+
+    <rewriteSystem systemIdStartString="http://servicemix.apache.org/schema/"
+        rewritePrefix="/xsd/" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.1.2.xsd"
+        uri="servicemix-audit-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.2.1.xsd"
+        uri="servicemix-audit-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.2.2.xsd"
+        uri="servicemix-audit-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.2.3.xsd"
+        uri="servicemix-audit-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.2.xsd"
+        uri="servicemix-audit-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.3.1.xsd"
+        uri="servicemix-audit-3.3.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.3.2.xsd"
+        uri="servicemix-audit-3.3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-audit-3.3.xsd"
+        uri="servicemix-audit-3.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-2008.01.xsd"
+        uri="servicemix-bean-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-2009.01.xsd"
+        uri="servicemix-bean-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-2009.02.xsd"
+        uri="servicemix-bean-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-2010.01.xsd"
+        uri="servicemix-bean-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-3.1.2.xsd"
+        uri="servicemix-bean-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-3.2.1.xsd"
+        uri="servicemix-bean-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-3.2.2.xsd"
+        uri="servicemix-bean-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-3.2.3.xsd"
+        uri="servicemix-bean-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bean-3.2.xsd"
+        uri="servicemix-bean-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bpe-3.1.2.xsd"
+        uri="servicemix-bpe-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bpe-3.2.1.xsd"
+        uri="servicemix-bpe-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bpe-3.2.2.xsd"
+        uri="servicemix-bpe-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bpe-3.2.3.xsd"
+        uri="servicemix-bpe-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-bpe-3.2.xsd"
+        uri="servicemix-bpe-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.1.2.xsd"
+        uri="servicemix-core-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.2.1.xsd"
+        uri="servicemix-core-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.2.2.xsd"
+        uri="servicemix-core-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.2.3.xsd"
+        uri="servicemix-core-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.2.xsd"
+        uri="servicemix-core-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.3.1.xsd"
+        uri="servicemix-core-3.3.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.3.2.xsd"
+        uri="servicemix-core-3.3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-core-3.3.xsd"
+        uri="servicemix-core-3.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-2008.01.xsd"
+        uri="servicemix-cxf-bc-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-2009.01.xsd"
+        uri="servicemix-cxf-bc-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-2009.02.xsd"
+        uri="servicemix-cxf-bc-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-2010.01.xsd"
+        uri="servicemix-cxf-bc-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-3.2.1.xsd"
+        uri="servicemix-cxf-bc-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-3.2.2.xsd"
+        uri="servicemix-cxf-bc-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-3.2.3.xsd"
+        uri="servicemix-cxf-bc-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-bc-3.2.xsd"
+        uri="servicemix-cxf-bc-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-2008.01.xsd"
+        uri="servicemix-cxf-se-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-2009.01.xsd"
+        uri="servicemix-cxf-se-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-2009.02.xsd"
+        uri="servicemix-cxf-se-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-2010.01.xsd"
+        uri="servicemix-cxf-se-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-3.2.1.xsd"
+        uri="servicemix-cxf-se-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-3.2.2.xsd"
+        uri="servicemix-cxf-se-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-3.2.3.xsd"
+        uri="servicemix-cxf-se-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-cxf-se-3.2.xsd"
+        uri="servicemix-cxf-se-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-2008.01.xsd"
+        uri="servicemix-drools-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-2009.01.xsd"
+        uri="servicemix-drools-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-2009.02.xsd"
+        uri="servicemix-drools-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-2010.01.xsd"
+        uri="servicemix-drools-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-3.1.2.xsd"
+        uri="servicemix-drools-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-3.2.1.xsd"
+        uri="servicemix-drools-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-3.2.2.xsd"
+        uri="servicemix-drools-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-3.2.3.xsd"
+        uri="servicemix-drools-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-drools-3.2.xsd"
+        uri="servicemix-drools-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-2008.01.xsd"
+        uri="servicemix-eip-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-2009.01.xsd"
+        uri="servicemix-eip-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-2009.02.xsd"
+        uri="servicemix-eip-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-2010.01.xsd"
+        uri="servicemix-eip-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-3.1.2.xsd"
+        uri="servicemix-eip-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-3.2.1.xsd"
+        uri="servicemix-eip-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-3.2.2.xsd"
+        uri="servicemix-eip-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-3.2.3.xsd"
+        uri="servicemix-eip-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-eip-3.2.xsd"
+        uri="servicemix-eip-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-exec-2009.02.xsd"
+        uri="servicemix-exec-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-exec-2010.01.xsd"
+        uri="servicemix-exec-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-2008.01.xsd"
+        uri="servicemix-file-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-2009.01.xsd"
+        uri="servicemix-file-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-2009.02.xsd"
+        uri="servicemix-file-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-2010.01.xsd"
+        uri="servicemix-file-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-3.1.2.xsd"
+        uri="servicemix-file-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-3.2.1.xsd"
+        uri="servicemix-file-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-3.2.2.xsd"
+        uri="servicemix-file-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-3.2.3.xsd"
+        uri="servicemix-file-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-file-3.2.xsd"
+        uri="servicemix-file-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-2008.01.xsd"
+        uri="servicemix-ftp-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-2009.01.xsd"
+        uri="servicemix-ftp-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-2009.02.xsd"
+        uri="servicemix-ftp-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-2010.01.xsd"
+        uri="servicemix-ftp-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-3.1.2.xsd"
+        uri="servicemix-ftp-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-3.2.1.xsd"
+        uri="servicemix-ftp-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-3.2.2.xsd"
+        uri="servicemix-ftp-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-3.2.3.xsd"
+        uri="servicemix-ftp-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-ftp-3.2.xsd"
+        uri="servicemix-ftp-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-2008.01.xsd"
+        uri="servicemix-http-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-2009.01.xsd"
+        uri="servicemix-http-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-2009.02.xsd"
+        uri="servicemix-http-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-2010.01.xsd"
+        uri="servicemix-http-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-3.1.2.xsd"
+        uri="servicemix-http-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-3.2.1.xsd"
+        uri="servicemix-http-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-3.2.2.xsd"
+        uri="servicemix-http-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-3.2.3.xsd"
+        uri="servicemix-http-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-http-3.2.xsd"
+        uri="servicemix-http-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-2008.01.xsd"
+        uri="servicemix-jms-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-2009.01.xsd"
+        uri="servicemix-jms-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-2009.02.xsd"
+        uri="servicemix-jms-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-2010.01.xsd"
+        uri="servicemix-jms-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-3.1.2.xsd"
+        uri="servicemix-jms-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-3.2.1.xsd"
+        uri="servicemix-jms-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-3.2.2.xsd"
+        uri="servicemix-jms-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-3.2.3.xsd"
+        uri="servicemix-jms-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jms-3.2.xsd"
+        uri="servicemix-jms-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-2008.01.xsd"
+        uri="servicemix-jsr181-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-2009.01.xsd"
+        uri="servicemix-jsr181-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-2009.02.xsd"
+        uri="servicemix-jsr181-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-2010.01.xsd"
+        uri="servicemix-jsr181-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-3.1.2.xsd"
+        uri="servicemix-jsr181-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-3.2.1.xsd"
+        uri="servicemix-jsr181-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-3.2.2.xsd"
+        uri="servicemix-jsr181-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-3.2.3.xsd"
+        uri="servicemix-jsr181-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-jsr181-3.2.xsd"
+        uri="servicemix-jsr181-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-mail-2008.01.xsd"
+        uri="servicemix-mail-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-mail-2009.01.xsd"
+        uri="servicemix-mail-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-mail-2009.02.xsd"
+        uri="servicemix-mail-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-mail-2010.01.xsd"
+        uri="servicemix-mail-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-2008.01.xsd"
+        uri="servicemix-osworkflow-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-2009.01.xsd"
+        uri="servicemix-osworkflow-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-2009.02.xsd"
+        uri="servicemix-osworkflow-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-2010.01.xsd"
+        uri="servicemix-osworkflow-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-3.2.2.xsd"
+        uri="servicemix-osworkflow-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-osworkflow-3.2.3.xsd"
+        uri="servicemix-osworkflow-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-2008.01.xsd"
+        uri="servicemix-quartz-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-2009.01.xsd"
+        uri="servicemix-quartz-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-2009.02.xsd"
+        uri="servicemix-quartz-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-2010.01.xsd"
+        uri="servicemix-quartz-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-3.1.2.xsd"
+        uri="servicemix-quartz-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-3.2.1.xsd"
+        uri="servicemix-quartz-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-3.2.2.xsd"
+        uri="servicemix-quartz-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-3.2.3.xsd"
+        uri="servicemix-quartz-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-quartz-3.2.xsd"
+        uri="servicemix-quartz-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-2008.01.xsd"
+        uri="servicemix-saxon-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-2009.01.xsd"
+        uri="servicemix-saxon-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-2009.02.xsd"
+        uri="servicemix-saxon-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-2010.01.xsd"
+        uri="servicemix-saxon-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-3.1.2.xsd"
+        uri="servicemix-saxon-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-3.2.1.xsd"
+        uri="servicemix-saxon-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-3.2.2.xsd"
+        uri="servicemix-saxon-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-3.2.3.xsd"
+        uri="servicemix-saxon-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-saxon-3.2.xsd"
+        uri="servicemix-saxon-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-2008.01.xsd"
+        uri="servicemix-script-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-2009.01.xsd"
+        uri="servicemix-script-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-2009.02.xsd"
+        uri="servicemix-script-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-2010.01.xsd"
+        uri="servicemix-script-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-3.1.2.xsd"
+        uri="servicemix-script-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-3.2.1.xsd"
+        uri="servicemix-script-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-3.2.2.xsd"
+        uri="servicemix-script-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-3.2.3.xsd"
+        uri="servicemix-script-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-script-3.2.xsd"
+        uri="servicemix-script-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-scripting-2008.01.xsd"
+        uri="servicemix-scripting-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-scripting-2009.01.xsd"
+        uri="servicemix-scripting-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-scripting-2009.02.xsd"
+        uri="servicemix-scripting-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-scripting-2010.01.xsd"
+        uri="servicemix-scripting-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-smpp-2009.01.xsd"
+        uri="servicemix-smpp-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-smpp-2009.02.xsd"
+        uri="servicemix-smpp-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-smpp-2010.01.xsd"
+        uri="servicemix-smpp-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-snmp-2008.01.xsd"
+        uri="servicemix-snmp-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-snmp-2009.01.xsd"
+        uri="servicemix-snmp-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-snmp-2009.02.xsd"
+        uri="servicemix-snmp-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-snmp-2010.01.xsd"
+        uri="servicemix-snmp-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-2008.01.xsd"
+        uri="servicemix-soap-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-2009.01.xsd"
+        uri="servicemix-soap-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-2009.02.xsd"
+        uri="servicemix-soap-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-2010.01.xsd"
+        uri="servicemix-soap-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-3.1.2.xsd"
+        uri="servicemix-soap-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-3.2.1.xsd"
+        uri="servicemix-soap-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-3.2.2.xsd"
+        uri="servicemix-soap-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-3.2.3.xsd"
+        uri="servicemix-soap-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-soap-3.2.xsd"
+        uri="servicemix-soap-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-2008.01.xsd"
+        uri="servicemix-truezip-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-2009.01.xsd"
+        uri="servicemix-truezip-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-2009.02.xsd"
+        uri="servicemix-truezip-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-2010.01.xsd"
+        uri="servicemix-truezip-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-3.2.1.xsd"
+        uri="servicemix-truezip-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-3.2.2.xsd"
+        uri="servicemix-truezip-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-3.2.3.xsd"
+        uri="servicemix-truezip-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-truezip-3.2.xsd"
+        uri="servicemix-truezip-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-validation-2008.01.xsd"
+        uri="servicemix-validation-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-validation-2009.01.xsd"
+        uri="servicemix-validation-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-validation-2009.02.xsd"
+        uri="servicemix-validation-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-validation-2010.01.xsd"
+        uri="servicemix-validation-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-vfs-2009.01.xsd"
+        uri="servicemix-vfs-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-vfs-2009.02.xsd"
+        uri="servicemix-vfs-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-vfs-2010.01.xsd"
+        uri="servicemix-vfs-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-2008.01.xsd"
+        uri="servicemix-wsn2005-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-2009.01.xsd"
+        uri="servicemix-wsn2005-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-2009.02.xsd"
+        uri="servicemix-wsn2005-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-2010.01.xsd"
+        uri="servicemix-wsn2005-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-3.1.2.xsd"
+        uri="servicemix-wsn2005-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-3.2.1.xsd"
+        uri="servicemix-wsn2005-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-3.2.2.xsd"
+        uri="servicemix-wsn2005-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-3.2.3.xsd"
+        uri="servicemix-wsn2005-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-wsn2005-3.2.xsd"
+        uri="servicemix-wsn2005-3.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-2008.01.xsd"
+        uri="servicemix-xmpp-2008.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-2009.01.xsd"
+        uri="servicemix-xmpp-2009.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-2009.02.xsd"
+        uri="servicemix-xmpp-2009.02.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-2010.01.xsd"
+        uri="servicemix-xmpp-2010.01.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-3.1.2.xsd"
+        uri="servicemix-xmpp-3.1.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-3.2.1.xsd"
+        uri="servicemix-xmpp-3.2.1.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-3.2.2.xsd"
+        uri="servicemix-xmpp-3.2.2.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-3.2.3.xsd"
+        uri="servicemix-xmpp-3.2.3.xsd" />
+
+    <system systemId="http://servicemix.apache.org/schema/servicemix-xmpp-3.2.xsd"
+        uri="servicemix-xmpp-3.2.xsd" />
+
+</catalog>

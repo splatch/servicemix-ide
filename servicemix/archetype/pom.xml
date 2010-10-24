@@ -1,0 +1,248 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.smxide</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.2.0.SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.smxide</groupId>
+    <artifactId>org.smxide.servicemix.archetype</artifactId>
+
+    <packaging>eclipse-plugin</packaging>
+
+    <properties>
+        <!-- Skip wagon operations -->
+        <wagonSkip>false</wagonSkip>
+
+        <!-- Archetype filtering -->
+        <groupId>org.apache.servicemix.tooling</groupId>
+
+        <xsltOutput>target/generated-resources</xsltOutput>
+
+        <downloadUrl>http://repo1.maven.org/maven2</downloadUrl>
+        <downloadFile>archetype-catalog.xml</downloadFile>
+        <downloadTarget>target/wagon</downloadTarget>
+
+        <uploadFromDir>${xsltOutput}</uploadFromDir>
+        <uploadToDir>ide/servicemix</uploadToDir>
+
+        <stylesheet>../../common/archetype/archetype-filter.xsl</stylesheet>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Inherited from parent -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>wagon-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>download</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>download-single</goal>
+                        </goals>
+                        <configuration>
+                            <url>${downloadUrl}</url>
+                            <fromFile>${downloadFile}</fromFile>
+                            <toDir>${downloadTarget}</toDir>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <skip>${wagonSkip}</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+                <version>1.0-beta-3</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <transformationSets>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>3.0</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-3.0.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>3.1</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-3.1.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>3.2</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-3.2.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>3.3</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-3.3.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>2008</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-2008.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>2009</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-2009.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                        <transformationSet>
+                            <stylesheet>${stylesheet}</stylesheet>
+                            <dir>${downloadTarget}</dir>
+                            <outputDir>${xsltOutput}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>groupId</name><value>${groupId}</value>
+                                </parameter>
+                                <parameter>
+                                    <name>version</name><value>2010</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.MergeFileMapper">
+                                    <targetName>archetype-2010.xml</targetName>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                    </transformationSets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>upload</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>wagon-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>upload</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>upload</goal>
+                                </goals>
+                                <configuration>
+                                    <url>${uploadUrl}</url>
+                                    <fromDir>${uploadFromDir}</fromDir>
+                                    <serverId>${uploadServerId}</serverId>
+                                    <toDir>${uploadToDir}</toDir>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.maven.wagon</groupId>
+                                <artifactId>wagon-ftp</artifactId>
+                                <version>1.0-beta-6</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

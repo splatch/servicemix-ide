@@ -3,9 +3,17 @@
    <feature url="features/org.smxide.camel.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.camel.feature" version="0.2.0.SNAPSHOT">
       <category name="org.smxide.camel"/>
    </feature>
+   <feature url="features/org.smxide.common.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.common.feature" version="0.2.0.SNAPSHOT">
+      <category name="org.smxide.common"/>
+   </feature>
    <category-def name="org.smxide.camel" label="Apache Camel tooling">
       <description>
          Apache Camel tooling
+      </description>
+   </category-def>
+   <category-def name="org.smxide.common" label="Common tools for ServiceMix IDE">
+      <description>
+         Common tools.
       </description>
    </category-def>
 </site>

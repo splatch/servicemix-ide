@@ -8,53 +8,53 @@
     <rewriteURI rewritePrefix="http://activemq.apache.org/camel/schema/spring"
         uriStartString="/xsd/" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.0.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.0.0.xsd"
         uri="camel-spring-1.0.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.1.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.1.0.xsd"
         uri="camel-spring-1.1.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.2.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.2.0.xsd"
         uri="camel-spring-1.2.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.3.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.3.0.xsd"
         uri="camel-spring-1.3.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.4.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.4.0.xsd"
         uri="camel-spring-1.4.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.5.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.5.0.xsd"
         uri="camel-spring-1.5.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.0.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.0.xsd"
         uri="camel-spring-1.6.0.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.1.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.1.xsd"
         uri="camel-spring-1.6.1.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.2.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.2.xsd"
         uri="camel-spring-1.6.2.xsd" />
 
-    <uri name="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.3.xsd"
+    <system systemId="http://activemq.apache.org/camel/schema/spring/camel-spring-1.6.3.xsd"
         uri="camel-spring-1.6.3.xsd" />
 
     <!-- Camel 2.x schema location -->
-    <rewriteURI rewritePrefix="http://camel.apache.org/schema/"
-        uriStartString="/xsd/" />
+    <rewriteSystem systemIdStartString="http://camel.apache.org/schema/"
+        rewritePrefix="/xsd/" />
 
-    <uri name="http://camel.apache.org/schema/spring/camel-spring-2.0.0.xsd"
+    <system systemId="http://camel.apache.org/schema/spring/camel-spring-2.0.0.xsd"
         uri="camel-spring-2.0.0.xsd" />
 
-    <uri name="http://camel.apache.org/schema/spring/camel-spring-2.1.0.xsd"
+    <system systemId="http://camel.apache.org/schema/spring/camel-spring-2.1.0.xsd"
         uri="camel-spring-2.1.0.xsd" />
 
-    <uri name="http://camel.apache.org/schema/spring/camel-spring-2.2.0.xsd"
+    <system systemId="http://camel.apache.org/schema/spring/camel-spring-2.2.0.xsd"
         uri="camel-spring-2.2.0.xsd" />
 
-    <uri name="http://camel.apache.org/schema/spring/camel-spring-2.3.0.xsd"
+    <system systemId="http://camel.apache.org/schema/spring/camel-spring-2.3.0.xsd"
         uri="camel-spring-2.3.0.xsd" />
 
-    <uri name="http://camel.apache.org/schema/spring/camel-spring-2.4.0.xsd"
+    <system systemId="http://camel.apache.org/schema/spring/camel-spring-2.4.0.xsd"
         uri="camel-spring-2.4.0.xsd" />
 
 
