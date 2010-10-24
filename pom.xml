@@ -124,7 +124,7 @@
                 <version>2.7</version>
                 <configuration>
                     <buildOutputDirectory>bin</buildOutputDirectory>
-                    <projectNameTemplate>[groupId]_[artifactId]</projectNameTemplate>
+                    <projectNameTemplate>[artifactId]</projectNameTemplate>
                 </configuration>
             </plugin>
 
