@@ -1,9 +1,7 @@
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:arch="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:output method="xml" encoding="UTF-8" indent="yes" />
-    <xsl:strip-space elements="arch:archetypes"/>
+    <xsl:strip-space elements="*[local-name(.) = 'archetype-catalog']"/>
 
     <xsl:param name="groupId" />
     <xsl:param name="version" />
@@ -12,17 +10,17 @@
         <xsl:call-template name="copy" />
     </xsl:template>
 
-    <xsl:template match="//arch:archetype">
+    <xsl:template match="//*[local-name(.) = 'archetype']">
         <xsl:choose>
-            <xsl:when test="arch:groupId = $groupId and starts-with(arch:version, $version)">
+            <xsl:when test="*[local-name(.) = 'groupId'] = $groupId and starts-with(*[local-name(.) = 'version'], $version)">
                 <xsl:call-template name="copy" />
             </xsl:when>
-            <!-- Debug condition
+            <!--
             <xsl:otherwise>
                 <xsl:comment>
                     Refuse:
-                        <xsl:value-of select="arch:groupId" />!=<xsl:value-of select="$groupId" /> (<xsl:value-of select="string(arch:groupId = $groupId)" />), 
-                        <xsl:value-of select="arch:version" />!=<xsl:value-of select="$version" /> (<xsl:value-of select="string(starts-with(arch:version, $version))" />),
+                        <xsl:value-of select="*[local-name(.) = 'groupId']" />!=<xsl:value-of select="$groupId" /> (<xsl:value-of select="string(*[local-name(.) = 'groupId'] = $groupId)" />), 
+                        <xsl:value-of select="*[local-name(.) = 'version']" />!=<xsl:value-of select="$version" /> (<xsl:value-of select="string(starts-with(*[local-name(.) = 'version'], $version))" />),
                 </xsl:comment>
             </xsl:otherwise>
             -->

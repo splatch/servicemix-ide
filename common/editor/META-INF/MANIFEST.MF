@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ActivationPolicy: lazy
 Built-By: Code-House
 Tool: Bnd-0.0.357
-Bundle-Name: %Bundle-Name
+Bundle-Name: org.smxide.common.editor
 Created-By: Apache Maven Bundle Plugin
 Build-Jdk: 1.6.0_21
 Bundle-Version: 0.2.0.SNAPSHOT
@@ -11,5 +11,5 @@ Bundle-ManifestVersion: 2
 Bundle-License: http://www.eclipse.org/legal/epl-v10.html
 Bundle-Description: %Bundle-Description
 Bundle-SymbolicName: org.smxide.common.editor;singleton:=true
-Bundle-Vendor: %Bundle-Vendor
+Bundle-Vendor: Code-House
 Bundle-ClassPath: .

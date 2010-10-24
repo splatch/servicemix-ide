@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ActivationPolicy: lazy
 Built-By: Code-House
 Tool: Bnd-0.0.357
-Bundle-Name: %Bundle-Name
+Bundle-Name: org.smxide.common.archetype
 Created-By: Apache Maven Bundle Plugin
 Require-Bundle: org.eclipse.wst.xml.core
 Build-Jdk: 1.6.0_21
@@ -12,5 +12,5 @@ Bundle-ManifestVersion: 2
 Bundle-License: http://www.eclipse.org/legal/epl-v10.html
 Bundle-Description: %Bundle-Description
 Bundle-SymbolicName: org.smxide.common.archetype;singleton:=true
-Bundle-Vendor: %Bundle-Vendor
+Bundle-Vendor: Code-House
 Bundle-ClassPath: .
