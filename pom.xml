@@ -75,11 +75,15 @@
         <module>servicemix/archetype</module>
         <module>servicemix/feature</module>
 
-        <!-- ActiveMQ -->
+        <!-- ActiveMQ, currently without archetypes -->
+        <module>activemq/catalog</module>
+        <module>activemq/feature</module>
+
         <!-- Karaf -->
         <!-- CXF -->
 
         <!-- Any other ? -->
+		<module>update-site</module>
     </modules>
 
     <organization>

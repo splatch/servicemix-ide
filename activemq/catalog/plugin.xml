@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="org.eclipse.wst.xml.core.catalogContributions">
+        <catalogContribution id="org.smxide.activemq.catalog.apache">
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-4.1.1.xsd" uri="fuse/activemq-core-4.1.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-4.1.2.xsd" uri="fuse/activemq-core-4.1.2.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.xsd" uri="fuse/activemq-core-5.0.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.1.0.xsd" uri="fuse/activemq-core-5.1.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.2.0.xsd" uri="fuse/activemq-core-5.2.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd" uri="fuse/activemq-core-5.3.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.1.xsd" uri="fuse/activemq-core-5.3.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.2.xsd" uri="fuse/activemq-core-5.3.2.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.4.0.xsd" uri="fuse/activemq-core-5.4.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.4.1.xsd" uri="fuse/activemq-core-5.4.1.xsd" />
+
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-4.1.1.xsd" uri="fuse/activemq-ra-4.1.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-4.1.2.xsd" uri="fuse/activemq-ra-4.1.2.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.xsd" uri="fuse/activemq-ra-5.0.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.1.0.xsd" uri="fuse/activemq-ra-5.1.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.2.0.xsd" uri="fuse/activemq-ra-5.2.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.xsd" uri="fuse/activemq-ra-5.3.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.1.xsd" uri="fuse/activemq-ra-5.3.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.2.xsd" uri="fuse/activemq-ra-5.3.2.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.4.0.xsd" uri="fuse/activemq-ra-5.4.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.4.1.xsd" uri="fuse/activemq-ra-5.4.1.xsd" />
+
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.xsd" uri="fuse/activemq-jpa-store-5.0.0.xsd" />
+        </catalogContribution>
+
+        <catalogContribution id="org.smxide.activemq.catalog.fuse-core">
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.0-fuse.xsd" uri="fuse/activemq-core-5.0.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.1-fuse.xsd" uri="fuse/activemq-core-5.0.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.10-fuse.xsd" uri="fuse/activemq-core-5.0.0.10-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.11-fuse.xsd" uri="fuse/activemq-core-5.0.0.11-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.12-fuse.xsd" uri="fuse/activemq-core-5.0.0.12-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.13-fuse.xsd" uri="fuse/activemq-core-5.0.0.13-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.14-fuse.xsd" uri="fuse/activemq-core-5.0.0.14-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.15-fuse.xsd" uri="fuse/activemq-core-5.0.0.15-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.16-fuse.xsd" uri="fuse/activemq-core-5.0.0.16-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.17-fuse.xsd" uri="fuse/activemq-core-5.0.0.17-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.18-fuse.xsd" uri="fuse/activemq-core-5.0.0.18-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.19-fuse.xsd" uri="fuse/activemq-core-5.0.0.19-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.2-fuse.xsd" uri="fuse/activemq-core-5.0.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.20-fuse.xsd" uri="fuse/activemq-core-5.0.0.20-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.21-fuse.xsd" uri="fuse/activemq-core-5.0.0.21-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.22-fuse.xsd" uri="fuse/activemq-core-5.0.0.22-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.23-fuse.xsd" uri="fuse/activemq-core-5.0.0.23-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.24-fuse.xsd" uri="fuse/activemq-core-5.0.0.24-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.25-fuse.xsd" uri="fuse/activemq-core-5.0.0.25-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.26-fuse.xsd" uri="fuse/activemq-core-5.0.0.26-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.27-fuse.xsd" uri="fuse/activemq-core-5.0.0.27-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.28-fuse.xsd" uri="fuse/activemq-core-5.0.0.28-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.29-fuse.xsd" uri="fuse/activemq-core-5.0.0.29-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.3-fuse.xsd" uri="fuse/activemq-core-5.0.0.3-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.30-fuse.xsd" uri="fuse/activemq-core-5.0.0.30-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.31-fuse.xsd" uri="fuse/activemq-core-5.0.0.31-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.32-fuse.xsd" uri="fuse/activemq-core-5.0.0.32-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.4-fuse.xsd" uri="fuse/activemq-core-5.0.0.4-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.5-fuse.xsd" uri="fuse/activemq-core-5.0.0.5-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.6-fuse.xsd" uri="fuse/activemq-core-5.0.0.6-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.7-fuse.xsd" uri="fuse/activemq-core-5.0.0.7-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.8-fuse.xsd" uri="fuse/activemq-core-5.0.0.8-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.0.0.9-fuse.xsd" uri="fuse/activemq-core-5.0.0.9-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.1.0.0-fuse.xsd" uri="fuse/activemq-core-5.1.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.1.0.1-fuse.xsd" uri="fuse/activemq-core-5.1.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.1.0.2-fuse.xsd" uri="fuse/activemq-core-5.1.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.2.0.0-fuse.xsd" uri="fuse/activemq-core-5.2.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.2.0.1-fuse.xsd" uri="fuse/activemq-core-5.2.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.2.0.2-fuse.xsd" uri="fuse/activemq-core-5.2.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0-fuse-01-00.xsd" uri="fuse/activemq-core-5.3.0-fuse-01-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0-psc-01-00RC1.xsd" uri="fuse/activemq-core-5.3.0-psc-01-00RC1.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.0-fuse.xsd" uri="fuse/activemq-core-5.3.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.1-fuse.xsd" uri="fuse/activemq-core-5.3.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.2-fuse.xsd" uri="fuse/activemq-core-5.3.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.3-fuse.xsd" uri="fuse/activemq-core-5.3.0.3-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.4-fuse.xsd" uri="fuse/activemq-core-5.3.0.4-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.5-fuse.xsd" uri="fuse/activemq-core-5.3.0.5-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.6-fuse.xsd" uri="fuse/activemq-core-5.3.0.6-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.7-fuse.xsd" uri="fuse/activemq-core-5.3.0.7-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.0.8-fuse.xsd" uri="fuse/activemq-core-5.3.0.8-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.1-fuse-00-00.xsd" uri="fuse/activemq-core-5.3.1-fuse-00-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.1-fuse-01-00.xsd" uri="fuse/activemq-core-5.3.1-fuse-01-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.1-fuse-02-00.xsd" uri="fuse/activemq-core-5.3.1-fuse-02-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.3.1-fuse-02-01.xsd" uri="fuse/activemq-core-5.3.1-fuse-02-01.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-5.4.0-fuse-00-00.xsd" uri="fuse/activemq-core-5.4.0-fuse-00-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-fuse-4.1.2.0.xsd" uri="fuse/activemq-core-fuse-4.1.2.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-fuse-4.1.2.1.xsd" uri="fuse/activemq-core-fuse-4.1.2.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-fuse-4.1.2.4.xsd" uri="fuse/activemq-core-fuse-4.1.2.4.xsd" />
+            <uri name="http://activemq.apache.org/schema/core/activemq-core-fuse-4.1.2.5.xsd" uri="fuse/activemq-core-fuse-4.1.2.5.xsd" />
+        </catalogContribution>
+
+        <catalogContribution id="org.smxide.activemq.catalog.fuse-jpastore">
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.0-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.1-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.10-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.10-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.11-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.11-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.12-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.12-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.13-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.13-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.14-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.14-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.15-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.15-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.16-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.16-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.17-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.17-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.18-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.18-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.19-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.19-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.2-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.20-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.20-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.21-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.21-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.22-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.22-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.23-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.23-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.24-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.24-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.25-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.25-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.26-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.26-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.27-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.27-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.28-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.28-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.29-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.29-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.3-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.3-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.30-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.30-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.31-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.31-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.32-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.32-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.4-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.4-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.5-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.5-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.6-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.6-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.7-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.7-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.8-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.8-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/jpa-store/activemq-jpa-store-5.0.0.9-fuse.xsd" uri="fuse/activemq-jpa-store-5.0.0.9-fuse.xsd" />
+        </catalogContribution>
+
+        <catalogContribution id="org.smxide.activemq.catalog.fuse-ra">
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.0-fuse.xsd" uri="fuse/activemq-ra-5.0.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.1-fuse.xsd" uri="fuse/activemq-ra-5.0.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.10-fuse.xsd" uri="fuse/activemq-ra-5.0.0.10-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.11-fuse.xsd" uri="fuse/activemq-ra-5.0.0.11-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.12-fuse.xsd" uri="fuse/activemq-ra-5.0.0.12-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.13-fuse.xsd" uri="fuse/activemq-ra-5.0.0.13-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.14-fuse.xsd" uri="fuse/activemq-ra-5.0.0.14-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.15-fuse.xsd" uri="fuse/activemq-ra-5.0.0.15-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.16-fuse.xsd" uri="fuse/activemq-ra-5.0.0.16-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.17-fuse.xsd" uri="fuse/activemq-ra-5.0.0.17-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.18-fuse.xsd" uri="fuse/activemq-ra-5.0.0.18-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.19-fuse.xsd" uri="fuse/activemq-ra-5.0.0.19-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.2-fuse.xsd" uri="fuse/activemq-ra-5.0.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.20-fuse.xsd" uri="fuse/activemq-ra-5.0.0.20-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.21-fuse.xsd" uri="fuse/activemq-ra-5.0.0.21-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.22-fuse.xsd" uri="fuse/activemq-ra-5.0.0.22-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.23-fuse.xsd" uri="fuse/activemq-ra-5.0.0.23-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.24-fuse.xsd" uri="fuse/activemq-ra-5.0.0.24-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.25-fuse.xsd" uri="fuse/activemq-ra-5.0.0.25-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.26-fuse.xsd" uri="fuse/activemq-ra-5.0.0.26-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.27-fuse.xsd" uri="fuse/activemq-ra-5.0.0.27-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.28-fuse.xsd" uri="fuse/activemq-ra-5.0.0.28-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.29-fuse.xsd" uri="fuse/activemq-ra-5.0.0.29-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.3-fuse.xsd" uri="fuse/activemq-ra-5.0.0.3-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.30-fuse.xsd" uri="fuse/activemq-ra-5.0.0.30-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.31-fuse.xsd" uri="fuse/activemq-ra-5.0.0.31-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.32-fuse.xsd" uri="fuse/activemq-ra-5.0.0.32-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.4-fuse.xsd" uri="fuse/activemq-ra-5.0.0.4-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.5-fuse.xsd" uri="fuse/activemq-ra-5.0.0.5-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.6-fuse.xsd" uri="fuse/activemq-ra-5.0.0.6-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.7-fuse.xsd" uri="fuse/activemq-ra-5.0.0.7-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.8-fuse.xsd" uri="fuse/activemq-ra-5.0.0.8-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.0.0.9-fuse.xsd" uri="fuse/activemq-ra-5.0.0.9-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.1.0.0-fuse.xsd" uri="fuse/activemq-ra-5.1.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.1.0.1-fuse.xsd" uri="fuse/activemq-ra-5.1.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.1.0.2-fuse.xsd" uri="fuse/activemq-ra-5.1.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.2.0.0-fuse.xsd" uri="fuse/activemq-ra-5.2.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.2.0.1-fuse.xsd" uri="fuse/activemq-ra-5.2.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.2.0.2-fuse.xsd" uri="fuse/activemq-ra-5.2.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0-fuse-01-00.xsd" uri="fuse/activemq-ra-5.3.0-fuse-01-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0-psc-01-00RC1.xsd" uri="fuse/activemq-ra-5.3.0-psc-01-00RC1.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.0-fuse.xsd" uri="fuse/activemq-ra-5.3.0.0-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.1-fuse.xsd" uri="fuse/activemq-ra-5.3.0.1-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.2-fuse.xsd" uri="fuse/activemq-ra-5.3.0.2-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.3-fuse.xsd" uri="fuse/activemq-ra-5.3.0.3-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.4-fuse.xsd" uri="fuse/activemq-ra-5.3.0.4-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.5-fuse.xsd" uri="fuse/activemq-ra-5.3.0.5-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.6-fuse.xsd" uri="fuse/activemq-ra-5.3.0.6-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.7-fuse.xsd" uri="fuse/activemq-ra-5.3.0.7-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.0.8-fuse.xsd" uri="fuse/activemq-ra-5.3.0.8-fuse.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.1-fuse-00-00.xsd" uri="fuse/activemq-ra-5.3.1-fuse-00-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.1-fuse-01-00.xsd" uri="fuse/activemq-ra-5.3.1-fuse-01-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.1-fuse-02-00.xsd" uri="fuse/activemq-ra-5.3.1-fuse-02-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.3.1-fuse-02-01.xsd" uri="fuse/activemq-ra-5.3.1-fuse-02-01.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-5.4.0-fuse-00-00.xsd" uri="fuse/activemq-ra-5.4.0-fuse-00-00.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-fuse-4.1.2.0.xsd" uri="fuse/activemq-ra-fuse-4.1.2.0.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-fuse-4.1.2.1.xsd" uri="fuse/activemq-ra-fuse-4.1.2.1.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-fuse-4.1.2.4.xsd" uri="fuse/activemq-ra-fuse-4.1.2.4.xsd" />
+            <uri name="http://activemq.apache.org/schema/ra/activemq-ra-fuse-4.1.2.5.xsd" uri="fuse/activemq-ra-fuse-4.1.2.5.xsd" />
+        </catalogContribution>
+    </extension>
+
+</plugin>
