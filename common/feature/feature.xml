@@ -13,7 +13,9 @@
         Copyright (C) Code-House 2010.
     </copyright>
 
-    <license url="http://www.eclipse.org/legal/epl-v10.html" />
+    <license url="http://www.eclipse.org/legal/epl-v10.html">
+        Eclipse Public License 1.0
+    </license>
 
     <plugin
         id="org.smxide.common.catalog"

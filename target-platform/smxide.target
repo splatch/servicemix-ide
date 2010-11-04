@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="smxide">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/>
+<repository location="http://m2eclipse.sonatype.org/sites/m2e"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.sdk.ide" version="3.6.1.M20100909-0800"/>
+<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT"/>
+<repository location="http://download.eclipse.org/releases/helios"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.springframework.ide.eclipse.feature.feature.group" version="2.5.0.201010141000-RC1"/>
+<unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="2.5.0.201010141000-RC1"/>
+<repository location="http://dist.springsource.com/milestone/TOOLS/update/e3.6"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.smxide.dependencies.feature.feature.group" version="0.2.0.SNAPSHOT"/>
+<repository location="http://servicemix.pl/ide/update/dependencies/"/>
+</location>
+</locations>
+</target>

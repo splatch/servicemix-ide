@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension
+            point="org.springframework.ide.eclipse.beans.core.namespaces">
+        <namespace
+              namespaceHandler="org.apache.camel.spring.handler.CamelNamespaceHandler"
+              uri="http://camel.apache.org/schema/spring">
+        </namespace>
+    </extension>
+    <extension
+            point="org.springframework.ide.eclipse.beans.ui.namespaces">
+        <namespace
+                defaultSchemaLocation="http://camel.apache.org/schema/spring/camel-spring.xsd"
+                name="Camel"
+                prefix="camel"
+                uri="http://camel.apache.org/schema/spring">
+        </namespace>
+    </extension>
+    <extension
+            point="org.springframework.ide.eclipse.beans.ui.editor.namespaces">
+        <namespace
+                contentAssistProcessor="org.smxide.camel.editor.editor.AssistProcessor"
+                hyperLinkDetector="org.smxide.camel.editor.editor.FileHyperlinkDetector"
+                uri="http://camel.apache.org/schema/spring">
+        </namespace>
+    </extension>
+
+</plugin>

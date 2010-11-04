@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.smxide.dependencies.feature"
+      label="ServiceMix IDE Dependencies (Required)"
+      version="0.2.0.SNAPSHOT"
+      provider-name="Code-House">
+
+   <description>
+      Embedded stuff for ServiceMix IDE.
+   </description>
+
+   <copyright>
+      Copyright (C) Code-House 2010.
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      Eclipse Public License 1.0
+   </license>
+
+    <plugin
+         id="org.apache.camel.camel-core"
+         download-size="0"
+         install-size="0"
+         version="2.4.0"
+         unpack="false"/>
+
+    <plugin
+         id="org.apache.camel.camel-spring"
+         download-size="0"
+         install-size="0"
+         version="2.4.0"
+         unpack="false"/>
+
+    <plugin id="commons-management"
+         download-size="0"
+         install-size="0"
+         version="1.0"
+         unpack="false"/>
+
+    <!--
+    <plugin
+         id="org.apache.activemq.activemq-core"
+         download-size="0"
+         install-size="0"
+         version="5.4.1"
+         unpack="false"/>
+    -->
+
+</feature>

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ActivationPolicy: lazy
 Built-By: Code-House
 Tool: Bnd-0.0.357
-Bundle-Name: org.smxide.common.catalog
+Bundle-Name: org.smxide.activemq.catalog
 Created-By: Apache Maven Bundle Plugin
 Require-Bundle: org.eclipse.wst.xml.core
 Build-Jdk: 1.6.0_21

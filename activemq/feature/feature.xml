@@ -14,7 +14,8 @@
    </copyright>
 
    <license url="http://www.eclipse.org/legal/epl-v10.html">
-   </license>
+        Eclipse Public License 1.0
+    </license>
 
    <plugin
          id="org.smxide.activemq.catalog"

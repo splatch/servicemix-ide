@@ -12,7 +12,9 @@
         Code-House (C) 2010.
     </copyright>
 
-    <license url="http://www.eclipse.org/legal/epl-v10.html" />
+    <license url="http://www.eclipse.org/legal/epl-v10.html">
+        Eclipse Public License 1.0
+    </license>
 
     <requires>
         <import feature="org.smxide.common.feature" version="0.2.0.SNAPSHOT"/>

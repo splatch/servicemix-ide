@@ -11,26 +11,9 @@
 
     <!-- Project identification -->
     <groupId>org.smxide</groupId>
-    <artifactId>org.smxide.common.feature</artifactId>
+    <artifactId>org.smxide.camel.editor</artifactId>
 
-    <packaging>eclipse-feature</packaging>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <configuration>
-                    <projectnatures>
-                        <projectnature>org.eclipse.pde.FeatureNature</projectnature>
-                    </projectnatures>
-                    <buildcommands>
-                        <buildcommand>org.eclipse.pde.FeatureBuilder</buildcommand>
-                    </buildcommands>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <packaging>eclipse-plugin</packaging>
 
     <dependencies>
         <dependency>
