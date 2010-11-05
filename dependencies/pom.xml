@@ -3,13 +3,6 @@
     <!-- Maven model version - the version 4.0.0 is reserver for Maven 2.x -->
     <modelVersion>4.0.0</modelVersion>
 
-    <!--<parent>
-        <groupId>org.smxide</groupId>
-        <artifactId>parent</artifactId>
-        <version>0.2.0.SNAPSHOT</version>
-    </parent>
-    -->
-
     <!-- Project identification -->
     <groupId>org.smxide</groupId>
     <artifactId>dependencies</artifactId>
@@ -18,6 +11,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <!-- Additiona artifacts which we have to wrap -->
+        <module>bundles</module>
+
+        <!-- Eclipse build infrastructure -->
         <module>feature</module>
         <module>update-site</module>
     </modules>

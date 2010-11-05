@@ -11,17 +11,19 @@
     <extension
             point="org.springframework.ide.eclipse.beans.ui.namespaces">
         <namespace
-                defaultSchemaLocation="http://camel.apache.org/schema/spring/camel-spring.xsd"
-                name="Camel"
-                prefix="camel"
-                uri="http://camel.apache.org/schema/spring">
+              defaultSchemaLocation="http://camel.apache.org/schema/spring/camel-spring.xsd"
+              icon="icons/full/obj16/entity.gif"
+              labelProvider="org.smxide.camel.editor.editor.CamelNamespaceLabelProvider"
+              name="Camel"
+              prefix="camel"
+              uri="http://camel.apache.org/schema/spring">
         </namespace>
     </extension>
     <extension
             point="org.springframework.ide.eclipse.beans.ui.editor.namespaces">
         <namespace
-                contentAssistProcessor="org.smxide.camel.editor.editor.AssistProcessor"
-                hyperLinkDetector="org.smxide.camel.editor.editor.FileHyperlinkDetector"
+                contentAssistProcessor="org.smxide.camel.editor.editor.CamelNamespaceContentAssistant"
+                hyperLinkDetector="org.smxide.camel.editor.editor.CamelNamespaceHyperlinkDetector"
                 uri="http://camel.apache.org/schema/spring">
         </namespace>
     </extension>

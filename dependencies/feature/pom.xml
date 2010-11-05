@@ -9,8 +9,8 @@
     </parent>
 
     <!-- Project identification -->
-    <groupId>org.smxide</groupId>
-    <artifactId>org.smxide.dependencies.feature</artifactId>
+    <groupId>org.smxide.dependencies</groupId>
+    <artifactId>feature</artifactId>
 
     <packaging>jar</packaging>
 
@@ -61,8 +61,9 @@
             <artifactId>commons-management</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-spring</artifactId>
+            <groupId>org.smxide.dependencies.bundles</groupId>
+            <artifactId>org.smxide.dependencies.camel-spring</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

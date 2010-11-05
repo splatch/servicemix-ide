@@ -3,23 +3,44 @@
 
 <target name="smxide">
 <locations>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
+<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.2.2.v201008170019-377AB8s73533J5H335L"/>
+<unit id="org.eclipse.jst.common.fproj.enablement.jdt.feature.group" version="3.2.2.v201008170019-377AB8s73533J5J759F"/>
+<unit id="org.eclipse.platform.sdk" version="3.6.1.M20100909-0800"/>
+<unit id="org.eclipse.sdk.ide" version="3.6.1.M20100909-0800"/>
+<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.2.2.v201008100100-7O7CFbKEMf84nUlEJyX7-SPQjhYZ"/>
+<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.2.2.v201008170029-7H7AFUQDxumQGOpBqffOY2f1qxDZ"/>
+<unit id="org.eclipse.emf.ecore.feature.group" version="2.6.1.v20100914-1218"/>
+<unit id="org.eclipse.emf.common.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.emf.common.ui.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.emf.ecore.edit.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.emf.edit.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.emf.edit.ui.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.gef.feature.group" version="3.6.1.v20100908-1100-777B181A3Bz-6B663E7974242"/>
+<unit id="org.eclipse.zest.sdk.feature.group" version="1.2.0.v20100519-2050-67908COKMFAKPYIEUdUVWhXYN8VN"/>
+<unit id="org.eclipse.wst.common_core.feature.feature.group" version="3.2.2.v201008091400-7B7DFElF7RZHOZJ6W0PsNJ"/>
+<unit id="org.eclipse.wst.common_ui.feature.feature.group" version="3.2.2.v201008091400-7C78FPhEdhO_mXde7kbap_K7X1Qt"/>
+<unit id="org.eclipse.wst.server_core.feature.feature.group" version="3.2.2.v20100908-30F8V8s734C3I3K"/>
+<unit id="org.eclipse.wst.server_ui.feature.feature.group" version="3.2.2.v20100908-7B4FBrAtJb1nESKmCJHPGQ347"/>
+<unit id="org.eclipse.wst.server_userdoc.feature.feature.group" version="3.1.10.v201005241510-20Bg7w3121162A3236"/>
+<unit id="org.eclipse.wst.web_core.feature.feature.group" version="3.2.2.v201008100100-7E7AFHwAJrn5PM15pUYBwJLkSG8j"/>
+<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT"/>
+<unit id="org.eclipse.xsd.feature.group" version="2.6.0.v20100914-1218"/>
+<unit id="org.eclipse.xsd.edit.feature.group" version="2.6.0.v20100914-1218"/>
+<repository location="http://download.eclipse.org/releases/helios"/>
+</location>
+<location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
 <unit id="org.maven.ide.eclipse.feature.feature.group" version="0.10.2.20100623-1649"/>
 <repository location="http://m2eclipse.sonatype.org/sites/m2e"/>
 </location>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.eclipse.sdk.ide" version="3.6.1.M20100909-0800"/>
-<unit id="org.eclipse.wst.xml_core.feature.feature.group" version="3.2.2.v201008170029-7C7OFXYF7RZHQHI5PyJwPT"/>
-<repository location="http://download.eclipse.org/releases/helios"/>
-</location>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
-<unit id="org.springframework.ide.eclipse.feature.feature.group" version="2.5.0.201010141000-RC1"/>
-<unit id="org.springframework.ide.eclipse.osgi.feature.feature.group" version="2.5.0.201010141000-RC1"/>
-<repository location="http://dist.springsource.com/milestone/TOOLS/update/e3.6"/>
-</location>
-<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
 <unit id="org.smxide.dependencies.feature.feature.group" version="0.2.0.SNAPSHOT"/>
-<repository location="http://servicemix.pl/ide/update/dependencies/"/>
+<repository location="http://servicemix.pl/ide/update/dependencies"/>
+</location>
+<location includeAllPlatforms="true" includeMode="slicer" type="InstallableUnit">
+<unit id="org.springframework.ide.eclipse.feature.feature.group" version="2.5.0.201010221000-RELEASE"/>
+<unit id="org.springframework.ide.eclipse.feature.source.feature.group" version="2.5.0.201010221000-RELEASE"/>
+<repository location="http://dist.springsource.com/release/TOOLS/update/e3.6"/>
 </location>
 </locations>
 </target>

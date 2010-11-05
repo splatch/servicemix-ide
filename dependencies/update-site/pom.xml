@@ -62,8 +62,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.smxide</groupId>
-            <artifactId>org.smxide.dependencies.feature</artifactId>
+            <groupId>org.smxide.dependencies</groupId>
+            <artifactId>feature</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
@@ -100,6 +100,8 @@
                                 <argument>file:${project.build.directory}/updatesite/p2</argument>
                                 <argument>-source</argument>
                                 <argument>${project.build.directory}/updatesite/updatesite</argument>
+                                <argument>-repositoryName</argument>
+                                <argument>ServiceMix IDE Dependencies</argument>
                                 <argument>-compress</argument>
                                 <argument>-publishArtifacts</argument>
                             </arguments>
@@ -128,7 +130,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>wagon-maven-plugin</artifactId>
-                    <version>1.0-beta-3</version>
+                        <version>1.0-beta-3</version>
                         <executions>
                             <execution>
                                 <id>upload</id>

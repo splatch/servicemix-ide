@@ -1,4 +1,4 @@
-package org.smxide.camel.editor.editor;
+package org.smxide.camel.editor.editor.calculator;
 
 import org.springframework.ide.eclipse.beans.ui.editor.contentassist.IContentAssistCalculator;
 import org.springframework.ide.eclipse.beans.ui.editor.contentassist.IContentAssistContext;

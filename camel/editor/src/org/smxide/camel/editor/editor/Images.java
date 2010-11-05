@@ -1,4 +1,4 @@
-package org.smxide.camel.editor.ui;
+package org.smxide.camel.editor.editor;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,7 +9,7 @@ import org.springframework.ide.eclipse.beans.ui.BeansUIPlugin;
 
 public class Images {
 
-	public final static ImageDescriptor FILE_ENDPOINT = getImageDescriptor("/icons/obj16/file.png");
+	public final static ImageDescriptor CAMEL = getImageDescriptor("/icons/full/obj16/entity.gif");
 
 	private static ImageDescriptor getImageDescriptor(String loc) {
 		try {

@@ -19,7 +19,7 @@
             <useTransitiveDependencies>false</useTransitiveDependencies>
             <scope>compile</scope>
             <includes>
-                <include>*:*.feature:jar:*</include>
+                <include>*:feature:jar</include>
             </includes>
         </dependencySet>
 
@@ -30,8 +30,10 @@
                 <include>**</include>
             </includes>
             <excludes>
-                <exclude>*:*.feature:jar</exclude>
+                <exclude>*:feature:jar</exclude>
                 <exclude>*:dependencies-site:jar</exclude>
+                <exclude>org.springframework.osgi:*</exclude>
+                <exclude>org.apache.camel:camel-spring:*</exclude>
             </excludes>
         </dependencySet>
 

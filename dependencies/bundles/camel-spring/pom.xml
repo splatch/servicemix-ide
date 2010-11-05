@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.smxide.dependencies</groupId>
+        <artifactId>bundles</artifactId>
+        <version>0.2.0.SNAPSHOT</version>
+    </parent>
+
+    <!-- Project identification -->
+    <groupId>org.smxide.dependencies.bundles</groupId>
+    <artifactId>org.smxide.dependencies.camel-spring</artifactId>
+
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>camel-spring(wrapper)</Bundle-Name>
+                        <Import-Package>
+                            !org.apache.camel.spring.*,
+                            !org.apache.camel.osgi.*,
+                            !org.apache.camel.component,
+                            !org.apache.camel.component.event,
+                            !org.apache.camel.component.validator,
+                            !org.apache.camel.component.xslt,
+                            org.apache.camel.*,
+                            org.osgi.framework;version="[1.3,2)",
+                            org.springframework.osgi.*;version="[1.2,3)",
+                            org.springframework.*;version="[2.5,4)",
+                            *
+                        </Import-Package>
+                        <Export-Package>
+                            org.apache.camel.spring.*,
+                            org.apache.camel.osgi.*,
+                            org.apache.camel.component,
+                            org.apache.camel.component.event,
+                            org.apache.camel.component.test,
+                            org.apache.camel.component.validator,
+                            org.apache.camel.component.xslt
+                        </Export-Package>
+                        <Private-Package>
+                            org.apache.camel.core.osgi*,
+                            org.apache.camel.core.xml*
+                        </Private-Package>
+                        <Bundle-Activator>
+                            org.apache.camel.osgi.Activator
+                        </Bundle-Activator>
+                        <Embed-Dependency>camel-spring;inline=true</Embed-Dependency>
+                    </instructions>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
