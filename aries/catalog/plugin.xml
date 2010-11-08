@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="org.eclipse.wst.xml.core.catalogContributions">
+        <catalogContribution id="org.smxide.aries.catalog">
+            <public publicId="http://www.osgi.org/xmlns/blueprint/v1.0.0" uri="xsds/blueprint-1.0.0.xsd" />
+            <uri name="http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd" uri="xsds/blueprint-1.0.0.xsd" />
+
+            <public publicId="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0" uri="xsds/blueprint-cm-0.2.xsd" />
+
+            <public publicId="http://aries.apache.org/xmlns/jpa/v1.0.0" uri="xsds/jpa-0.2.xsd" />
+
+            <public publicId="http://aries.apache.org/xmlns/transactions/v1.0.0" uri="xsds/transaction-0.2-1.0.xsd" />
+            <public publicId="http://aries.apache.org/xmlns/transactions/v1.1.0" uri="xsds/transaction-0.2-1.1.xsd" />
+        </catalogContribution>
+    </extension>
+
+</plugin>

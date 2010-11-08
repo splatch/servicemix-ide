@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="org.eclipse.wst.xml.core.catalogContributions">
+        <catalogContribution id="org.smxide.karaf.catalog">
+            <public publicId="http://karaf.apache.org/xmlns/shell/v1.0.0" uri="xsds/karaf-shell-1.0.0.xsd" />
+            <public publicId="http://karaf.apache.org/xmlns/jaas/v1.0.0" uri="xsds/karaf-jaas-1.0.0.xsd" />
+        </catalogContribution>
+    </extension>
+</plugin>

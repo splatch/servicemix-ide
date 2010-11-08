@@ -11,7 +11,7 @@
 
     <!-- Project identification -->
     <groupId>org.smxide</groupId>
-    <artifactId>org.smxide.camel.editor</artifactId>
+    <artifactId>org.smxide.common.branding</artifactId>
 
     <packaging>eclipse-plugin</packaging>
 
