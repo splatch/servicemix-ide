@@ -28,6 +28,7 @@
                             !org.apache.camel.osgi.*,
                             !org.apache.camel.component,
                             !org.apache.camel.component.event,
+                            !org.apache.camel.component.test,
                             !org.apache.camel.component.validator,
                             !org.apache.camel.component.xslt,
                             org.apache.camel.*,
