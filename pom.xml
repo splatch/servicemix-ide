@@ -64,7 +64,6 @@
         <module>common/archetype</module>
         <module>common/catalog</module>
         <module>common/editor</module>
-        <module>common/branding</module>
         <module>common/feature</module>
 
         <module>camel/archetype</module>
@@ -82,16 +81,7 @@
         <module>activemq/feature</module>
 
         <!-- Karaf -->
-        <module>karaf/catalog</module>
-        <module>karaf/feature</module>
-
-        <!-- If we support Karaf, we must add Aries too -->
-        <module>aries/catalog</module>
-        <module>aries/feature</module>
-
-        <!-- CXF is currently not supported -->
-        <module>cxf/catalog</module>
-        <module>cxf/feature</module>
+        <!-- CXF -->
 
         <!-- Any other ? -->
         <module>update-site</module>

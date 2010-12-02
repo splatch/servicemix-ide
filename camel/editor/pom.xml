@@ -15,4 +15,12 @@
 
     <packaging>eclipse-plugin</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.smxide</groupId>
+            <artifactId>org.smxide.common.camel</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>
