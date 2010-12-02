@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/org.smxide.camel.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.camel.feature" version="0.2.0.SNAPSHOT">
-      <category name="org.smxide.camel"/>
+      <category name="org.smxide"/>
    </feature>
    <feature url="features/org.smxide.common.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.common.feature" version="0.2.0.SNAPSHOT">
-      <category name="org.smxide.common"/>
+      <category name="org.smxide"/>
    </feature>
    <feature url="features/org.smxide.servicemix.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.servicemix.feature" version="0.2.0.SNAPSHOT">
-      <category name="org.smxide.servicemix"/>
+      <category name="org.smxide"/>
    </feature>
    <feature url="features/org.smxide.activemq.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.activemq.feature" version="0.2.0.SNAPSHOT">
-      <category name="org.smxide.activemq"/>
+      <category name="org.smxide"/>
    </feature>
-   <category-def name="org.smxide.camel" label="Apache Camel tooling">
+   <feature url="features/org.smxide.aries.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.aries.feature" version="0.2.0.SNAPSHOT">
+      <category name="org.smxide"/>
+   </feature>
+   <feature url="features/org.smxide.karaf.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.karaf.feature" version="0.2.0.SNAPSHOT">
+      <category name="org.smxide"/>
+   </feature>
+   <feature url="features/org.smxide.cxf.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.cxf.feature" version="0.2.0.SNAPSHOT">
+      <category name="org.smxide"/>
+   </feature>
+
+   <category-def name="org.smxide" label="ServiceMix IDE">
       <description>
-         Apache Camel tooling
-      </description>
-   </category-def>
-   <category-def name="org.smxide.common" label="Common tools for ServiceMix IDE">
-      <description>
-         Common tools.
-      </description>
-   </category-def>
-   <category-def name="org.smxide.activemq" label="Apache ActiveMQ tooling">
-      <description>
-         Apache ActiveMQ tooling
-      </description>
-   </category-def>
-   <category-def name="org.smxide.servicemix" label="Apache ServiceMix tooling">
-      <description>
-         Apache ServiceMix tooling
+         ServiceMix IDE.
       </description>
    </category-def>
 </site>

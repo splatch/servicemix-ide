@@ -3,7 +3,8 @@
         id="org.smxide.common.feature"
         label="ServiceMix IDE Common Feature"
         version="0.2.0.SNAPSHOT"
-        provider-name="Code-House">
+        provider-name="Code-House"
+        plugin="org.smxide.common.branding">
 
     <description>
         Base for ServiceMix IDE.

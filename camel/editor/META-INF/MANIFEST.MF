@@ -37,5 +37,9 @@ Bundle-License: http://www.eclipse.org/legal/epl-v10.html
 Bundle-Description: %Bundle-Description
 Bundle-SymbolicName: org.smxide.camel.editor;singleton:=true
 Bundle-Vendor: Code-House
-Bundle-ClassPath: .
 Bundle-Activator: org.smxide.camel.editor.Activator
+Bundle-ClassPath: .,
+ aopalliance-1.0.jar,
+ tools.jar,
+ commons-logging-1.1.1.jar,
+ commons-logging-api-1.1.jar
