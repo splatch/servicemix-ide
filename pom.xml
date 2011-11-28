@@ -6,7 +6,7 @@
     <!-- Project identification -->
     <groupId>org.smxide</groupId>
     <artifactId>parent</artifactId>
-    <version>0.2.0.SNAPSHOT</version>
+    <version>0.2.0-SNAPSHOT</version>
 
     <name>ServiceMix IDE</name>
 
@@ -48,9 +48,9 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>code-house.public.snapshot</id>
+            <id>code-house.public-SNAPSHOT</id>
             <name>Code-House Public Snapshot</name>
-            <url>http://repository.code-house.org/content/repositories/code-house.public.snapshot</url>
+            <url>http://repository.code-house.org/content/repositories/code-house.public-SNAPSHOT</url>
         </snapshotRepository>
         <repository>
             <id>code-house.public.release</id>
@@ -227,13 +227,13 @@
         <repository>
             <id>helios</id>
             <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/helios</url>
+            <url>http://download.eclipse.org/releases/indigo</url>
         </repository>
         <!-- Spring IDE 2.x for e3.6 -->
         <repository>
             <id>springide</id>
             <layout>p2</layout>
-            <url>http://dist.springsource.com/milestone/TOOLS/update/e3.6</url>
+            <url>http://dist.springsource.com/milestone/TOOLS/update/e3.7</url>
         </repository>
     </repositories>
 
