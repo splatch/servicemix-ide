@@ -6,9 +6,6 @@
     <site url="http://m2eclipse.sonatype.org/sites/m2e"
         selected="true" name="M2Eclispe Update Site" />
 
-    <site url="http://servicemix.pl/ide/update/dependencies/" selected="true"
-        name="ServiceMix IDE (Dependencies)" />
-
     <site url="http://servicemix.pl/ide/update/dev/" selected="true"
         name="ServiceMix IDE Update Site (development snapshot)" />
 

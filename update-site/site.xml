@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.smxide.camel.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.camel.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.camel.feature_0.0.0.jar" id="org.smxide.camel.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.common.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.common.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.common.feature_0.0.0.jar" id="org.smxide.common.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.servicemix.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.servicemix.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.servicemix.feature_0.0.0.jar" id="org.smxide.servicemix.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.activemq.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.activemq.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.activemq.feature_0.0.0.jar" id="org.smxide.activemq.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.aries.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.aries.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.aries.feature_0.0.0.jar" id="org.smxide.aries.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.karaf.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.karaf.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.karaf.feature_0.0.0.jar" id="org.smxide.karaf.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-   <feature url="features/org.smxide.cxf.feature_0.2.0.SNAPSHOT.jar" id="org.smxide.cxf.feature" version="0.2.0.SNAPSHOT">
+   <feature url="features/org.smxide.cxf.feature_0.0.0.jar" id="org.smxide.cxf.feature" version="0.0.0">
       <category name="org.smxide"/>
    </feature>
-
    <category-def name="org.smxide" label="ServiceMix IDE">
       <description>
          ServiceMix IDE.

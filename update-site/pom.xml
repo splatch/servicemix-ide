@@ -18,23 +18,6 @@
 
     <packaging>eclipse-update-site</packaging>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <configuration>
-                    <projectnatures>
-                        <projectnature>org.eclipse.pde.UpdateSiteNature</projectnature>
-                    </projectnatures>
-                    <buildcommands>
-                        <buildcommand>org.eclipse.pde.UpdateSiteBuilder</buildcommand>
-                    </buildcommands>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
     <profiles>
         <profile>
             <id>upload</id>
