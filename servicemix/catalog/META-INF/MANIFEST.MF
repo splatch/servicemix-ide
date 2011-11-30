@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ActivationPolicy: lazy
 Bundle-Name: %Bundle-Name
 Require-Bundle: org.eclipse.wst.xml.core
-Bundle-Version: 0.2.0.SNAPSHOT
+Bundle-Version: 0.2.0.qualifier
 Bundle-ManifestVersion: 2
 Bundle-Description: %Bundle-Description
 Bundle-SymbolicName: org.smxide.servicemix.catalog;singleton:=true
