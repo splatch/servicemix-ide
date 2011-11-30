@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="smxide-e3.7">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.m2e.feature.feature.group" version="1.0.100.20110804-1717"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.7.1.r371_v20110810-0800-7z8gFcoFMLfTabvKsR5Qm9rBGEBK"/>
+<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.3.1.v201108102009-7H7EFZ3DxumTlaI6nheRdHo2p1KaDIL1Uz-S3PL"/>
+<repository location="http://download.eclipse.org/releases/indigo"/>
+</location>
+</locations>
+</target>

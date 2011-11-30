@@ -6,7 +6,7 @@ Bundle-Name: org.smxide.servicemix.archetype
 Created-By: Apache Maven Bundle Plugin
 Require-Bundle: org.eclipse.wst.xml.core
 Build-Jdk: 1.6.0_21
-Bundle-Version: 0.2.0.SNAPSHOT
+Bundle-Version: 0.2.0.qualifier
 Bnd-LastModified: 1287591353572
 Bundle-ManifestVersion: 2
 Bundle-License: http://www.eclipse.org/legal/epl-v10.html

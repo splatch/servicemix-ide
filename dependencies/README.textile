@@ -1,3 +1,0 @@
-h1. ServiceMix IDE Dependencies
-
-This directory contains bundles that are needed to run tooling inside Eclipse.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="smxide-e3.8">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="org.eclipse.m2e.feature.feature.group" version="1.1.0.20111108-0328"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.8.0.v20111011-0800-7z8lFm4FMTfGOa5x46SENNY9B15B"/>
+<unit id="org.eclipse.wst.xml_ui.feature.feature.group" version="3.4.0.v201111021744-7H7GFb7DxumUllJ4dhgXiL0ahrFpWOMqRwSz00PL"/>
+<repository location="http://download.eclipse.org/releases/staging"/>
+</location>
+</locations>
+</target>

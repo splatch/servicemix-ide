@@ -16,6 +16,8 @@
     <packaging>eclipse-plugin</packaging>
 
     <properties>
+        <repository-prefix>${project.parent.basedir}</repository-prefix>
+
         <!-- Skip wagon operations -->
         <wagonSkip>false</wagonSkip>
 

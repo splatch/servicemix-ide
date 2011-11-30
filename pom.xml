@@ -38,6 +38,8 @@
         <!-- General upload properties -->
         <uploadUrl>ftp://servicemix.pl</uploadUrl>
         <uploadServerId>smxide</uploadServerId>
+
+        <repository-location>/Users/lukasz/projects/servicemix-ide/repository/bundles/target/repository</repository-location>
     </properties>
 
     <scm>
@@ -99,17 +101,20 @@
         <!-- Most important comes to end -->
         <module>target-platform</module>
 
-        <!--
-        Dependencies are built separatelly, without Tycho and p2 resolver
-        <module>dependencies/feature</module>
-        <module>dependencies/update-site</module>
-        -->
     </modules>
 
     <organization>
         <name>Code-House</name>
         <url>http://code-house.org</url>
     </organization>
+
+    <repositories>
+        <repository>
+            <id>system-bundles</id>
+            <url>file:${repository-location}</url>
+            <layout>p2</layout>
+        </repository>
+    </repositories>
 
     <build>
         <pluginManagement>
@@ -150,38 +155,41 @@
                         <ignoreTychoRepositories>true</ignoreTychoRepositories>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.1.0</version>
-                </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-eclipse-plugin</artifactId>
-                    <version>2.7</version>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.0.1</version>
+                    <executions>
+                        <execution>
+                            <id>enforce-files-exist</id>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                            <configuration>
+                                <rules>
+                                    <requireFilesExist>
+                                        <message>P2 repository with dependencies do not exist. Please run mvn clean install inside repository/bundles directory.</message>
+                                        <files>
+                                            <file>${repository-location}/artifacts.xml</file>
+                                            <file>${repository-location}/content.xml</file>
+                                        </files>
+                                        <allowNulls>false</allowNulls>
+                                    </requireFilesExist>
+                                </rules>
+                                <fail>true</fail>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
 
         <plugins>
-            <!-- Maven to eclipse -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <configuration>
-                    <buildOutputDirectory>bin</buildOutputDirectory>
-                    <projectNameTemplate>[artifactId]</projectNameTemplate>
-                    <pde>false</pde>
-
-                    <!-- Make all Maven modules PDE plugins by default -->
-                    <additionalProjectnatures>
-                        <projectnature>org.eclipse.pde.PluginNature</projectnature>
-                    </additionalProjectnatures>
-                    <additionalBuildcommands>
-                        <buildcommand>org.eclipse.pde.ManifestBuilder</buildcommand>
-                        <buildcommand>org.eclipse.pde.SchemaBuilder</buildcommand>
-                    </additionalBuildcommands>
-                </configuration>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.0.1</version>
             </plugin>
 
             <plugin>
@@ -196,14 +204,13 @@
                 <artifactId>target-platform-configuration</artifactId>
                 <version>${tycho.version}</version>
                 <configuration>
-                    <resolver>p2</resolver>
                     <target>
                         <artifact>
                             <groupId>org.smxide</groupId>
                             <artifactId>target-platform</artifactId>
                             <version>${project.version}</version>
                             <type>target</type>
-                            <classifier>smxide</classifier>
+                            <classifier>e3.6</classifier>
                         </artifact>
                     </target>
                 </configuration>
@@ -214,27 +221,11 @@
                 <artifactId>maven-osgi-packaging-plugin</artifactId>
                 <version>${tycho.version}</version>
                 <configuration>
-                    <!-- This parameter turns off .qualifier verification -->
                     <strictVersions>false</strictVersions>
                 </configuration>
             </plugin>
 
         </plugins>
     </build>
-
-    <repositories>
-        <!-- Eclipse 3.6 -->
-        <repository>
-            <id>helios</id>
-            <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/indigo</url>
-        </repository>
-        <!-- Spring IDE 2.x for e3.6 -->
-        <repository>
-            <id>springide</id>
-            <layout>p2</layout>
-            <url>http://dist.springsource.com/milestone/TOOLS/update/e3.7</url>
-        </repository>
-    </repositories>
 
 </project>
