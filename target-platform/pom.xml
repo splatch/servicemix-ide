@@ -13,6 +13,10 @@
     <artifactId>target-platform</artifactId>
     <packaging>pom</packaging>
 
+    <properties>
+        <repository-prefix>${project.parent.basedir}</repository-prefix>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -31,10 +35,57 @@
                 <configuration>
                     <artifacts>
                          <artifact>
-                            <file>smxide.target</file>
+                            <file>smxide-e3.6.target</file>
                             <type>target</type>
+                            <classifier>e3.6</classifier>
+                        </artifact>
+                         <artifact>
+                            <file>smxide-e3.7.target</file>
+                            <type>target</type>
+                            <classifier>e3.7</classifier>
+                        </artifact>
+                         <artifact>
+                            <file>smxide-e3.8.target</file>
+                            <type>target</type>
+                            <classifier>e3.8</classifier>
                         </artifact>
                     </artifacts>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xml-maven-plugin</artifactId>
+                <version>1.0-beta-3</version>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <transformationSets>
+                        <transformationSet>
+                            <stylesheet>target-eclipse.xsl</stylesheet>
+                            <dir>${project.basedir}</dir>
+                            <includes>
+                                <include>*.target</include>
+                            </includes>
+                            <outputDir>${project.build.directory}</outputDir>
+                            <parameters>
+                                <parameter>
+                                    <name>location</name><value>${repository-location}</value>
+                                </parameter>
+                            </parameters>
+                            <fileMappers>
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                    <targetExtension>standalone.target</targetExtension>
+                                </fileMapper>
+                            </fileMappers>
+                        </transformationSet>
+                    </transformationSets>
                 </configuration>
             </plugin>
         </plugins>
