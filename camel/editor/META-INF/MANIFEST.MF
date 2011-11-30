@@ -1,11 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ActivationPolicy: lazy
-Built-By: Code-House
-Tool: Bnd-0.0.357
-Bundle-Name: org.smxide.camel.editor
-Created-By: Apache Maven Bundle Plugin
-Build-Jdk: 1.6.0_21
-Bundle-Version: 0.2.0.SNAPSHOT
+Bundle-Name: %Bundle-Name
+Bundle-Version: 0.2.0.qualifier
 Require-Bundle: org.eclipse.swt,
  org.eclipse.jface,
  org.eclipse.ui,
@@ -25,7 +21,6 @@ Require-Bundle: org.eclipse.swt,
  org.eclipse.wst.common.core,
  org.eclipse.core.boot,
  org.eclipse.wst.sse.ui
-Bnd-LastModified: 1287591353572
 Import-Package: org.apache.camel,
  org.apache.camel.processor.aggregate,
  org.apache.camel.spi,
@@ -33,9 +28,8 @@ Import-Package: org.apache.camel,
  org.eclipse.jdt.core,
  org.eclipse.wst.sse.core.internal.provisional
 Bundle-ManifestVersion: 2
-Bundle-License: http://www.eclipse.org/legal/epl-v10.html
 Bundle-Description: %Bundle-Description
 Bundle-SymbolicName: org.smxide.camel.editor;singleton:=true
-Bundle-Vendor: Code-House
+Bundle-Vendor: %Bundle-Vendor
 Bundle-Activator: org.smxide.camel.editor.Activator
 Bundle-ClassPath: .

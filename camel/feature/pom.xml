@@ -15,21 +15,8 @@
 
     <packaging>eclipse-feature</packaging>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <configuration>
-                    <projectnatures>
-                        <projectnature>org.eclipse.pde.FeatureNature</projectnature>
-                    </projectnatures>
-                    <buildcommands>
-                        <buildcommand>org.eclipse.pde.FeatureBuilder</buildcommand>
-                    </buildcommands>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <properties>
+        <repository-prefix>${project.parent.basedir}</repository-prefix>
+    </properties>
 
 </project>
