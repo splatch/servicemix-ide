@@ -15,8 +15,4 @@
 
     <packaging>eclipse-plugin</packaging>
 
-    <properties>
-        <repository-prefix>${project.parent.basedir}</repository-prefix>
-    </properties>
-
 </project>
