@@ -1,8 +1,0 @@
-eclipse -application org.eclipse.equinox.p2.metadata.generator.EclipseGenerator 
-    -source dependencies
-    -metadataRepository file:D:/sources/servicemix-ide/target-platform/repo
-    -artifactRepository file:D:/sources/servicemix-ide/target-platform/repo
-    -publishArtifacts
-    -publisArtifactRepository
-    -metadataRepositoryName "My Repo"
-    -compress
